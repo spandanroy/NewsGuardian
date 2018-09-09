@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/len_220"
+    android:layout_marginBottom="@dimen/len_8"
+    android:paddingBottom="@dimen/len_8">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_220"
+        android:layout_marginBottom="@dimen/len_8"
+        android:background="@android:color/darker_gray"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sectionName"
+        style="@style/sectionName_label"
+        app:layout_constraintBottom_toBottomOf="@id/author"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="117dp"
+        tools:text="Movie" />
+
+    <TextView
+        android:id="@+id/author"
+        style="@style/author_label"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        tools:text="Jessica Mercedess" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/title_style"
+        app:layout_constraintBottom_toBottomOf="@id/thumbnail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sectionName"
+        tools:ignore="RtlCompat"
+        tools:text="Cannes 2018: Hirokazu Kore-eda's Shoplifters wins the Palme d'Or – as it happened" />
+
+    <TextView
+        android:id="@+id/date"
+        style="@style/date_label"
+        android:text="@string/no_date"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="No date" />
+</android.support.constraint.ConstraintLayout>

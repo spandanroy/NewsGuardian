@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="labels_txt_size">12sp</dimen>
+    <dimen name="div_ht_0dp">0dp</dimen>
+    <dimen name="len_220">220dp</dimen>
+    <dimen name="len_8">8dp</dimen>
+</resources>
